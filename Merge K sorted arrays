@@ -22,7 +22,7 @@ class Solution {
     // Function to merge k sorted arrays.
     vector<int> mergeKArrays(vector<vector<int>> arr, int K) {
         // code here
-        int n=arr.size();
+      
         int m= arr[0].size();
         vector<int> ans;
         
@@ -30,7 +30,7 @@ class Solution {
         vector<pair<int,pair<int,int>>>,
         greater<pair<int,pair<int,int>>>> pq;
         
-        for(int i=0;i<n;i++){
+        for(int i=0;i<K;i++){
             pq.push({arr[i][0],{i,0}});
         }
         
